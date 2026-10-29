@@ -26,7 +26,7 @@ import { hashPassword } from "./password";
 import { buildPdf, type PdfLine } from "./pdf";
 
 export const DEMO_PASSWORD = "goldoni2026";
-export const DEMO_CLIENT_EMAIL = "cliente@paodourado.com.br";
+export const DEMO_CLIENT_EMAIL = "cliente@exemplo.com";
 export const DEMO_STAFF_EMAIL = "equipe@exemplo.com";
 export const STAFF_NAME = "Ana Paula Ribeiro";
 export const STAFF_SIGNATURE = "Equipe Goldoni · Demonstração";
@@ -50,17 +50,17 @@ type ClientSeed = {
 // Empresas fictícias usadas apenas para demonstração.
 const CLIENT_SEEDS: ClientSeed[] = [
   { legalName: "Padaria Pão Dourado Ltda", tradeName: "Pão Dourado", cnpj: "12.345.678/0001-90", regime: "Simples Nacional", segment: "Padaria e confeitaria", contactName: "Marina Souza", contactPhone: "(18) 99100-0001", contactEmail: DEMO_CLIENT_EMAIL, employees: 9, clientSince: 2012, completion: 0.5 },
-  { legalName: "Acerola Vale Verde Agroindustrial Ltda", tradeName: "Acerola Vale Verde", cnpj: "23.456.789/0001-01", regime: "Lucro Presumido", segment: "Agroindústria", contactName: "Roberto Tanaka", contactPhone: "(18) 99100-0002", contactEmail: "financeiro@valeverde.com.br", employees: 24, clientSince: 2009, completion: 1 },
-  { legalName: "Auto Peças Nova Alta Paulista Ltda", tradeName: "Auto Peças NAP", cnpj: "34.567.890/0001-12", regime: "Simples Nacional", segment: "Comércio de autopeças", contactName: "Carlos Menezes", contactPhone: "(18) 99100-0003", contactEmail: "carlos@autopecasnap.com.br", employees: 6, clientSince: 2015, completion: 0.3 },
-  { legalName: "Clínica Odontológica Sorriso Pleno Ltda", tradeName: "Sorriso Pleno", cnpj: "45.678.901/0001-23", regime: "Lucro Presumido", segment: "Saúde", contactName: "Dra. Fernanda Lima", contactPhone: "(18) 99100-0004", contactEmail: "adm@sorrisopleno.com.br", employees: 5, clientSince: 2018, completion: 0.85 },
-  { legalName: "Mercado Bom Preço Junqueirópolis Ltda", tradeName: "Mercado Bom Preço", cnpj: "56.789.012/0001-34", regime: "Simples Nacional", segment: "Supermercado", contactName: "Antônio Ferreira", contactPhone: "(18) 99100-0005", contactEmail: "compras@mercadobompreco.com.br", employees: 18, clientSince: 2007, completion: 0.5 },
-  { legalName: "Transportadora Rota Oeste Ltda", tradeName: "Rota Oeste", cnpj: "67.890.123/0001-45", regime: "Lucro Presumido", segment: "Transporte de cargas", contactName: "Juliano Ribeiro", contactPhone: "(18) 99100-0006", contactEmail: "juliano@rotaoeste.com.br", employees: 14, clientSince: 2011, completion: 0 },
-  { legalName: "JR Construções e Reformas Ltda", tradeName: "JR Construções", cnpj: "78.901.234/0001-56", regime: "Simples Nacional", segment: "Construção civil", contactName: "José Roberto Alves", contactPhone: "(18) 99100-0007", contactEmail: "jr@jrconstrucoes.com.br", employees: 11, clientSince: 2016, completion: 0.6 },
-  { legalName: "Farmácia Vida & Saúde Ltda", tradeName: "Farmácia Vida & Saúde", cnpj: "89.012.345/0001-67", regime: "Simples Nacional", segment: "Farmácia", contactName: "Patrícia Nogueira", contactPhone: "(18) 99100-0008", contactEmail: "patricia@vidaesaude.com.br", employees: 7, clientSince: 2013, completion: 1 },
-  { legalName: "Agropecuária Três Irmãos Ltda", tradeName: "Agropecuária Três Irmãos", cnpj: "90.123.456/0001-78", regime: "Lucro Real", segment: "Agropecuária", contactName: "Luiz Henrique Batista", contactPhone: "(18) 99100-0009", contactEmail: "luiz@tresirmaos.agr.br", employees: 32, clientSince: 2006, completion: 0.7 },
-  { legalName: "Camila Rocha Estética", tradeName: "Studio Bella Estética", cnpj: "41.234.567/0001-89", regime: "MEI", segment: "Estética", contactName: "Camila Rocha", contactPhone: "(18) 99100-0010", contactEmail: "camila@studiobella.com.br", employees: 0, clientSince: 2021, completion: 0 },
-  { legalName: "Escola Infantil Primeiros Passos Ltda", tradeName: "Primeiros Passos", cnpj: "52.345.678/0001-90", regime: "Simples Nacional", segment: "Educação infantil", contactName: "Sueli Martins", contactPhone: "(18) 99100-0011", contactEmail: "direcao@primeirospassos.com.br", employees: 8, clientSince: 2014, completion: 0.4 },
-  { legalName: "Oficina Mecânica Zé Motor Ltda", tradeName: "Zé Motor", cnpj: "63.456.789/0001-01", regime: "Simples Nacional", segment: "Oficina mecânica", contactName: "José Carlos Pereira", contactPhone: "(18) 99100-0012", contactEmail: "contato@zemotor.com.br", employees: 3, clientSince: 2019, completion: 0.15 },
+  { legalName: "Acerola Vale Verde Agroindustrial Ltda", tradeName: "Acerola Vale Verde", cnpj: "23.456.789/0001-01", regime: "Lucro Presumido", segment: "Agroindústria", contactName: "Roberto Tanaka", contactPhone: "(18) 99100-0002", contactEmail: "financeiro@exemplo.com", employees: 24, clientSince: 2009, completion: 1 },
+  { legalName: "Auto Peças Nova Alta Paulista Ltda", tradeName: "Auto Peças NAP", cnpj: "34.567.890/0001-12", regime: "Simples Nacional", segment: "Comércio de autopeças", contactName: "Carlos Menezes", contactPhone: "(18) 99100-0003", contactEmail: "carlos@exemplo.com", employees: 6, clientSince: 2015, completion: 0.3 },
+  { legalName: "Clínica Odontológica Sorriso Pleno Ltda", tradeName: "Sorriso Pleno", cnpj: "45.678.901/0001-23", regime: "Lucro Presumido", segment: "Saúde", contactName: "Dra. Fernanda Lima", contactPhone: "(18) 99100-0004", contactEmail: "adm@exemplo.com", employees: 5, clientSince: 2018, completion: 0.85 },
+  { legalName: "Mercado Bom Preço Junqueirópolis Ltda", tradeName: "Mercado Bom Preço", cnpj: "56.789.012/0001-34", regime: "Simples Nacional", segment: "Supermercado", contactName: "Antônio Ferreira", contactPhone: "(18) 99100-0005", contactEmail: "compras@exemplo.com", employees: 18, clientSince: 2007, completion: 0.5 },
+  { legalName: "Transportadora Rota Oeste Ltda", tradeName: "Rota Oeste", cnpj: "67.890.123/0001-45", regime: "Lucro Presumido", segment: "Transporte de cargas", contactName: "Juliano Ribeiro", contactPhone: "(18) 99100-0006", contactEmail: "juliano@exemplo.com", employees: 14, clientSince: 2011, completion: 0 },
+  { legalName: "JR Construções e Reformas Ltda", tradeName: "JR Construções", cnpj: "78.901.234/0001-56", regime: "Simples Nacional", segment: "Construção civil", contactName: "José Roberto Alves", contactPhone: "(18) 99100-0007", contactEmail: "jr@exemplo.com", employees: 11, clientSince: 2016, completion: 0.6 },
+  { legalName: "Farmácia Vida & Saúde Ltda", tradeName: "Farmácia Vida & Saúde", cnpj: "89.012.345/0001-67", regime: "Simples Nacional", segment: "Farmácia", contactName: "Patrícia Nogueira", contactPhone: "(18) 99100-0008", contactEmail: "patricia@exemplo.com", employees: 7, clientSince: 2013, completion: 1 },
+  { legalName: "Agropecuária Três Irmãos Ltda", tradeName: "Agropecuária Três Irmãos", cnpj: "90.123.456/0001-78", regime: "Lucro Real", segment: "Agropecuária", contactName: "Luiz Henrique Batista", contactPhone: "(18) 99100-0009", contactEmail: "luiz@exemplo.com", employees: 32, clientSince: 2006, completion: 0.7 },
+  { legalName: "Camila Rocha Estética", tradeName: "Studio Bella Estética", cnpj: "41.234.567/0001-89", regime: "MEI", segment: "Estética", contactName: "Camila Rocha", contactPhone: "(18) 99100-0010", contactEmail: "camila@exemplo.com", employees: 0, clientSince: 2021, completion: 0 },
+  { legalName: "Escola Infantil Primeiros Passos Ltda", tradeName: "Primeiros Passos", cnpj: "52.345.678/0001-90", regime: "Simples Nacional", segment: "Educação infantil", contactName: "Sueli Martins", contactPhone: "(18) 99100-0011", contactEmail: "direcao@exemplo.com", employees: 8, clientSince: 2014, completion: 0.4 },
+  { legalName: "Oficina Mecânica Zé Motor Ltda", tradeName: "Zé Motor", cnpj: "63.456.789/0001-01", regime: "Simples Nacional", segment: "Oficina mecânica", contactName: "José Carlos Pereira", contactPhone: "(18) 99100-0012", contactEmail: "contato@exemplo.com", employees: 3, clientSince: 2019, completion: 0.15 },
 ];
 
 type ChecklistItem = { title: string; description: string; category: string };
@@ -534,7 +534,7 @@ async function seedLeads(tx: Tx) {
     {
       name: "Rafael Mendes",
       company: "Mendes Hortifruti",
-      email: "rafael@mendeshortifruti.com.br",
+      email: "rafael@exemplo.com",
       phone: "(18) 99812-3456",
       service: "Abertura de empresa",
       message: "Sou MEI e o faturamento cresceu. Quero abrir uma ME e entender quanto vou pagar de imposto.",
@@ -545,7 +545,7 @@ async function seedLeads(tx: Tx) {
     {
       name: "Luciana Prado",
       company: "Prado Moda Feminina",
-      email: "luciana@pradomoda.com.br",
+      email: "luciana@exemplo.com",
       phone: "(18) 99654-7788",
       service: "Troca de contador",
       message: "Sinto que pago muito imposto e não tenho retorno do contador atual.",
@@ -556,7 +556,7 @@ async function seedLeads(tx: Tx) {
     {
       name: "Paulo Henrique Dias",
       company: "Clínica Veterinária Amigo Fiel",
-      email: "paulo@amigofiel.vet.br",
+      email: "paulo@exemplo.com",
       phone: "(18) 99777-1020",
       service: "Planejamento tributário",
       message: "Quero avaliar se vale a pena sair do Simples Nacional.",
