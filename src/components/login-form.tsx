@@ -17,7 +17,7 @@ export function LoginForm({ clientEmail, staffEmail, password }: { clientEmail: 
       <form action={formAction} className="space-y-4">
         <div>
           <label htmlFor="email" className="text-sm font-medium text-slate-700">E-mail</label>
-          <input id="email" name="email" type="email" required defaultValue={state.email} placeholder="voce@empresa.com.br" className={inputClass} autoComplete="email" />
+          <input id="email" name="email" type="email" required defaultValue={state.email} placeholder="voce@exemplo.com" className={inputClass} autoComplete="email" />
         </div>
         <div>
           <label htmlFor="password" className="text-sm font-medium text-slate-700">Senha</label>

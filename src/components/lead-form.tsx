@@ -64,7 +64,7 @@ export function LeadForm({ defaultService = "Troca de contador", dark = false }:
       </div>
       <div>
         <label htmlFor="lead-email" className={labelClass}>E-mail</label>
-        <input id="lead-email" name="email" type="email" placeholder="voce@empresa.com.br" className={inputClass} autoComplete="email" />
+        <input id="lead-email" name="email" type="email" placeholder="voce@exemplo.com" className={inputClass} autoComplete="email" />
         {state.errors?.email && <p className="mt-1 text-xs font-medium text-rose-500">{state.errors.email}</p>}
       </div>
       <div className="sm:col-span-2">
