@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-50: #eef4fb;
+  --color-navy-100: #d9e6f5;
+  --color-navy-200: #b3cceb;
+  --color-navy-300: #7fa9dc;
+  --color-navy-400: #4a84c9;
+  --color-navy-500: #2563b0;
+  --color-navy-600: #1b4f93;
+  --color-navy-700: #163f77;
+  --color-navy-800: #12335f;
+  --color-navy-900: #0b2a4e;
+  --color-navy-950: #071b33;
+
+  --color-gold-50: #fbf7ea;
+  --color-gold-100: #f5ebc8;
+  --color-gold-200: #ecd88f;
+  --color-gold-300: #e0c25a;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #c9a227;
+  --color-gold-600: #a8851c;
+  --color-gold-700: #846717;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, Cambria, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.bg-grid-dark {
+  background-image:
+    linear-gradient(to right, rgb(11 42 78 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(11 42 78 / 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose-goldoni p {
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: rgb(51 65 85);
+}
+.prose-goldoni h2 {
+  margin-top: 2.25rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-navy-950);
+}
+.prose-goldoni ul {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+.prose-goldoni li {
+  position: relative;
+  padding-left: 1.6rem;
+  line-height: 1.7;
+  color: rgb(51 65 85);
+}
+.prose-goldoni li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.62rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  background: var(--color-gold-500);
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
