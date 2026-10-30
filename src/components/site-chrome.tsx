@@ -164,7 +164,17 @@ export function SiteFooter() {
           <p>
             © {year} {COMPANY.legalName} · CNPJ {COMPANY.cnpj}
           </p>
-          <p>Protótipo desenvolvido por Murilo · Next.js + PostgreSQL</p>
+          <p>
+            <a
+              href="https://wa.me/5518998133524"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Falar com Murilo Mota no WhatsApp"
+              className="transition-colors hover:text-gold-300"
+            >
+              Desenvolvido por Murilo Mota · 55 (18) 99813-3524
+            </a>
+          </p>
         </div>
       </div>
     </footer>
